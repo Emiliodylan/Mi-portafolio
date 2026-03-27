@@ -1,3 +1,4 @@
+
 body {
     background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
     min-height: 100vh;
@@ -92,4 +93,34 @@ a:hover{
     margin: 0 auto 20px;
     border: 5px solid #3498db;
 
+}
+@media (max-width: 600px) {
+    body {
+        padding: 20px; /* Menos espacio en los bordes para ganar sitio */
+    }
+
+    .tarjeta {
+        width: 90%; /* La tarjeta ocupa casi todo el ancho del móvil */
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 2rem; /* Reducimos un poco el nombre para que no salte de línea */
+    }
+
+    ul {
+        flex-direction: column; /* Los cuadritos de habilidades se ponen uno bajo otro */
+        align-items: center;
+    }
+
+    li {
+        width: 80%; /* Hacemos las habilidades más anchas para que sea fácil tocarlas con el dedo */
+    }
+
+    a {
+        width: 100%; /* Los botones ocupan todo el ancho (más fácil de pulsar) */
+        margin: 10px 0;
+        box-sizing: border-box; /* Evita que el botón se salga por el padding */
+    }
 }
