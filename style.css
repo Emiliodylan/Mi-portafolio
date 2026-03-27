@@ -1,4 +1,3 @@
-
 body {
     background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
     min-height: 100vh;
@@ -6,12 +5,12 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #f0f2f5;
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 50px;
 }
 
-h1{
+h1 {
     color: #2c3e50;
     font-size: 2.5rem;
     margin-bottom: 5px;
@@ -26,7 +25,7 @@ h2 {
 
 }
 
-ul{
+ul {
     list-style: none;
     padding: 0;
 
@@ -38,8 +37,9 @@ li {
     padding: 10px;
     width: 200px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,1 );
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
 }
+
 .btn-instagram {
     display: inline-block;
     margin-top: 25px;
@@ -49,13 +49,13 @@ li {
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
-    box-shadow: 0 4px 6px rgb( 0,0,0,0,1);
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0, 1);
 }
 
 
 
 
-.btn-facebook{
+.btn-facebook {
     display: inline-block;
     margin-top: 25px;
     color: white;
@@ -64,23 +64,24 @@ li {
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
-    box-shadow: 0 4px 6px rgb( 0,0,0,0,1);
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0, 1);
 }
 
-a:hover{
+a:hover {
     transform: translate(-5px) scale(1.05);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     filter: brightness(1.1);
 }
-.tarjeta{
+
+.tarjeta {
     background: white;
     max-width: 400px;
     margin: 20px auto;
     overflow: hidden;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,1 );
-   
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
+
 
 }
 
@@ -88,39 +89,56 @@ a:hover{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    
+
     display: block;
     margin: 0 auto 20px;
     border: 5px solid #3498db;
 
 }
+
 @media (max-width: 600px) {
     body {
-        padding: 20px; /* Menos espacio en los bordes para ganar sitio */
+        padding: 20px;
+        /* Menos espacio en los bordes para ganar sitio */
     }
 
     .tarjeta {
-        width: 90%; /* La tarjeta ocupa casi todo el ancho del móvil */
+        width: 90%;
+        /* La tarjeta ocupa casi todo el ancho del móvil */
         padding: 20px;
         margin: 10px auto;
     }
 
     h1 {
-        font-size: 2rem; /* Reducimos un poco el nombre para que no salte de línea */
+        font-size: 2rem;
+        /* Reducimos un poco el nombre para que no salte de línea */
     }
 
     ul {
-        flex-direction: column; /* Los cuadritos de habilidades se ponen uno bajo otro */
+        padding: 0;
+        /* ¡ESTO ES LO MÁS IMPORTANTE! Quita el espacio invisible */
+        margin: 20px 0;
+        /* Espacio arriba y abajo */
+        display: flex;
+        flex-direction: column;
+        /* Los cuadritos de habilidades se ponen uno bajo otro */
         align-items: center;
     }
 
     li {
-        width: 80%; /* Hacemos las habilidades más anchas para que sea fácil tocarlas con el dedo */
+
+        width: 80%;
+        /* Hacemos las habilidades más anchas para que sea fácil tocarlas con el dedo */
+        text-align: center;
+        /* Centra el texto dentro del cuadrito */
     }
 
+
     a {
-        width: 100%; /* Los botones ocupan todo el ancho (más fácil de pulsar) */
+        width: 100%;
+        /* Los botones ocupan todo el ancho (más fácil de pulsar) */
         margin: 10px 0;
-        box-sizing: border-box; /* Evita que el botón se salga por el padding */
+        box-sizing: border-box;
+        /* Evita que el botón se salga por el padding */
     }
 }
